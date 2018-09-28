@@ -1,0 +1,94 @@
+.logo
+{
+	position: absolute;
+	top: 8px;
+	left: 16px;
+	height: auto;
+	width: 10%;
+}
+
+.button{
+	position: absolute;
+	top: 8px;
+	right: 16px;
+}
+
+body
+{
+	background-size: cover;
+	margin: 0;
+	padding: 0;
+	font-family: cursive;
+	color: #00008B;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: black;
+    text-align: center;
+}
+
+
+.box
+{
+	margin: 0.5px;
+	padding: 0px 0 0px;
+	text-align: left;
+	font-size: 8px;
+	
+}
+
+.login
+{
+	width:600;
+	height: 350;
+	background: #ffffff;
+	color: #00008B;
+	top: 300;
+	left: 50%;
+	position: absolute;
+	transform: translate(-50%,-50%);
+	border: 1px solid black;
+	box-sizing: border-box;
+	padding: 10px 20px;
+}
+
+.login1
+{
+	width:800;
+	height: 220;
+	background: #ffffff;
+	color: #000000;
+	top: 200;
+	left: 50%;
+	position: absolute;
+	transform: translate(-50%,-50%);
+	border: 1px solid black;
+	box-sizing: border-box;
+	padding: 10px 20px;
+}
+
+
+.back
+{
+	background-color: none ;
+	border: none;
+	color: white;
+	padding: 25px 32px;
+	text-align: right;
+	width: 40px;
+	height: 20px;
+}
+
+h1
+{
+	top:0;
+	margin: 0;
+	padding: 60 0 20px;
+	text-align: center;
+	font-size: 22px;
+	font-family: cursive;
+}

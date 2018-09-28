@@ -1,0 +1,52 @@
+<script>
+function configureDropDownLists(ddl1,ddl2) {
+        var Clothing = new Array('Nike', 'Reebok', 'Puma');
+        var Automobiles = new Array('Bike', 'Car', 'Truck');
+        var Books = new Array('Action', 'Drama', 'Fiction');
+    
+        switch (ddl1.value) {
+        case 'Books':
+                ddl2.options.length = 0;
+                for (i = 0; i < Books.length; i++) {
+                    createOption(ddl2, Books[i], Books[i]);
+                }
+                break;
+            case 'Clothing':
+                ddl2.options.length = 0;
+                for (i = 0; i < Clothing.length; i++) {
+                    createOption(ddl2, Clothing[i], Clothing[i]);
+                }
+                break;
+           
+            case 'Automobiles':
+                ddl2.options.length = 0;
+                for (i = 0; i < Automobiles.length; i++) {
+                    createOption(ddl2, Automobiles[i], Automobiles[i]);
+                }
+                break;
+                default:
+                    ddl2.options.length = 0;
+                break;
+        }
+
+    }
+
+    function createOption(ddl, text, value) {
+        var opt = document.createElement('option');
+        opt.value = value;
+        opt.text = text;
+        ddl.options.add(opt);
+    }
+</script>
+
+<html>
+<select id="ddl" onchange="configureDropDownLists(this,document.getElementById('ddl2'))">
+<option value="Select Department"></option>
+<option value="Clothing">Clothing</option>
+<option value="Automobiles">Automobiles</option>
+<option value="Books">Books</option>
+</select>
+
+<select id="ddl2">
+</select>
+</html>
